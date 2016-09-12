@@ -1,0 +1,101 @@
+body{
+	background-color: #E1E4E6;
+}
+/*  CONTAINER  */
+.container {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  ROW SETUP  */
+.row {
+	display: block;
+	float:left;
+	margin: 1% 2% 1% 1.6%;
+    width: 95%;
+}
+
+.topRow{
+	color: #000;
+    font-size: 30px;
+    font-weight: bold;
+	float:left;
+	width: 95%;
+}
+
+.result{
+	color:red;
+}
+.bottomRow{
+	float:left;
+	width:100%;
+}
+
+.row1{
+	float:left;
+	width:60%;
+}
+
+.row2{
+	float:left;
+	width:25%;
+}
+
+.row3{
+	float:left;
+	width:10%;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button[type="submit"], a.button {
+    background-color: #7db500;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px !important;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 30px;
+    line-height: 22.5px;
+    margin: 0;
+    padding: 0 7.5px;
+	cursor: pointer;
+	/*width:60%;
+	text-align: left;*/
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	font-size: 25px;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GRID OF TWO  */
+.col1 {
+	width: 40%;
+	/*color: red;
+	border-right:1px solid #000;*/
+}
+.col2 {
+	width: 48%;
+		/*color: green;*/
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.col2, .col1 { width: 100%; }
+}
